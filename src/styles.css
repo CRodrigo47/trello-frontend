@@ -1,5 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@theme {
+  --color-primary-50: #FBF7FD;
+  --color-primary-100: #F5ECFB;
+  --color-primary-200: #EDDDF7;
+  --color-primary-300: #DFC2F0;
+  --color-primary-400: #CB9AE6;
+  --color-primary-500: #AD61D4;
+  --color-primary-600: #A255C8;
+  --color-primary-700: #8C42AE;
+  --color-primary-800: #763A8F;
+  --color-primary-900: #603073;
+  --color-primary-950: #421B53;
+
+  --color-background-light: #FBF7FD;
+  --color-background-dark: #421B53;
+
+  --font-display: "Poppins", sans-serif;
+
+  --rounded: 0.5rem;
+}
