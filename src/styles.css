@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary-50: #FBF7FD;
   --color-primary-100: #F5ECFB;
@@ -14,7 +16,7 @@
   --color-primary-950: #421B53;
 
   --color-background-light: #FBF7FD;
-  --color-background-dark: #421B53;
+  --color-background-dark: #232124;
 
   --font-display: "Poppins", sans-serif;
 
