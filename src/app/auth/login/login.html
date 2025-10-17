@@ -11,7 +11,7 @@
       <h1 class="text-2xl font-bold text-center text-primary-800 dark:text-primary-100 mb-6">
         Iniciar Sesión
       </h1>
-      <form>
+      <form (ngSubmit)="handleLogin()">
         <div class="mb-4">
           <label
             class="block text-primary-700 dark:text-primary-200 text-sm font-bold mb-2"
@@ -23,6 +23,9 @@
             id="username"
             placeholder="Tu nombre de usuario"
             type="text"
+            name="username"
+            [(ngModel)]="credentials.username"
+            required
           />
         </div>
         <div class="mb-6">
@@ -36,12 +39,15 @@
             id="password"
             placeholder="Tu contraseña"
             type="password"
+            name="password"
+            [(ngModel)]="credentials.password"
+            required
           />
         </div>
         <button
           class="w-full bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-colors duration-300"
           id="login-button"
-          type="button"
+          type="submit"
         >
           Entrar
         </button>
