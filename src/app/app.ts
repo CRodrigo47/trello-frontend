@@ -1,9 +1,10 @@
 import { Component, DOCUMENT, Inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, LoadingScreenComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
